@@ -1,0 +1,17 @@
+<div>
+  <h2>Employee Details :</h2>
+  <table>
+    <tr>
+      <th>Id</th>
+      <th (click)="sortName()">Name</th>
+      <th>Department</th>
+      <th>Joining Date</th>
+    </tr>
+    <tr *ngFor="let employee of employees">
+      <td>{{employee.id}}</td>
+      <td>{{employee.name}}</td>
+      <td>{{employee.department}}</td>
+      <td>{{employee.joining_date}}</td>
+    </tr>
+  </table>
+</div>
